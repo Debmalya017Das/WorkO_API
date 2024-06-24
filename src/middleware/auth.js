@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 
 const authMiddleware = (req, res, next) => {
   // Skip authentication for login route
-  if (req.path === '/login') {
+  if (req.path === '/login' || req.path === '/register') {
     return next();
   }
 

@@ -6,6 +6,7 @@ const userSchema = Joi.object({
   age: Joi.number().integer().min(18).max(120),
   city: Joi.string(),
   zipCode: Joi.string().pattern(/^\d{5}(-\d{4})?$/).message('Invalid ZIP code').required(),
+   password: Joi.string().min(3)
 });
 
 const partialUserSchema = Joi.object({
