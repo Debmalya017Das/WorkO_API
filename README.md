@@ -4,15 +4,17 @@ WorkO_API is a project designed to manage work-related tasks efficiently through
 
 To set up and run this project, ensure you have the following prerequisites installed:
 
-Node.js (v14.x or later)
-npm (v6.x or later)
-MongoDB
-Setup
+1) Node.js (v14.x or later)
+2) npm (v6.x or later)
+3) MongoDB
+   
+## Setup
 Clone the repository
 
-
+```
 git clone https://github.com/Debmalya017Das/WorkO_API.git
 cd WorkO_API
+```
 Install dependencies
 
 Install the required dependencies using npm.
