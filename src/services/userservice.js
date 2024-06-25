@@ -1,6 +1,6 @@
 const UserDao = require('../dao/userdao');
 const UserDto = require('../dto/userdto');
-const { validateUser, validateUserUpdate } = require('../validators/uservalidator');
+const { validateUser, validatePartialUser } = require('../validators/uservalidator');
 const bcrypt = require('bcrypt');
 
 class UserService {
@@ -24,13 +24,13 @@ class UserService {
   }
 
   async updateUser(id, userData) {
-    const { error } = validateUserUpdate(userData); // Remove id from validation
-    if (error) throw new Error(error.details[0].message);
+  const { error } = validatePartialUser(userData); // Changed from validateUserUpdate to validatePartialUser
+  if (error) throw new Error(error.details[0].message);
 
-    const user = await UserDao.update(id, userData);
-    if (!user) throw new Error('User not found');
-    return new UserDto(user);
-  }
+  const user = await UserDao.update(id, userData);
+  if (!user) throw new Error('User not found');
+  return new UserDto(user);
+}
 
   async deleteUser(id) {
     const user = await UserDao.softDelete(id);
