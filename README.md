@@ -23,8 +23,10 @@ cd WorkO_API
 Install dependencies
 
 Install the required dependencies using npm.
-
+```
 npm install
+
+```
 Set up environment variables
 
 I have provided the dot env file. Just change the mongo_url as per requirement. Example:
@@ -33,8 +35,10 @@ MONGO_URI = ' your mongo server string '.
 Ensure MongoDB is running on your system. 
 
 Start the API server using npm.
-
+```
 npm run dev
+
+```
 The API should now be running at http://localhost:3000.
 
 ## Testing
