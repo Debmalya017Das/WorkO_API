@@ -57,7 +57,13 @@ Test coverage
 - PUT /worko/user/:id - Update a user
 - DELETE /worko/user/:id - Delete a user
 
-  ## Note : All the tests work by interacting with the mongodb server. If mongodb is not connected then the tests will be failed. 
+  ## Note : All the tests work by interacting with the mongodb server. If mongodb is not connected then the tests will be failed.
+
+## Demo of working on my local device 
+![image](https://github.com/Debmalya017Das/WorkO_API/assets/106435168/471a1da9-66c7-4c32-b9a0-3dcaaecaa30a)
+![image](https://github.com/Debmalya017Das/WorkO_API/assets/106435168/a340821c-6ab6-401e-8efb-bf1f46720725)
+
+
 
 License
 This project is licensed under the MIT License.
