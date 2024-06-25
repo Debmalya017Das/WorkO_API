@@ -1,14 +1,7 @@
 ## WorkO_API
 WorkO_API is a project designed to manage work-related tasks efficiently through a robust API. This document provides instructions for setting up the project and details about the tests performed.
 
-Table of Contents
-Requirements
-Setup
-Running the API
-Testing
-Contributing
-License
-Requirements
+
 To set up and run this project, ensure you have the following prerequisites installed:
 
 Node.js (v14.x or later)
