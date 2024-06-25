@@ -47,8 +47,10 @@ This project includes a set of tests to ensure the API functions correctly. The 
  Run tests
 
 Execute the tests using the following command:
-
+```
 npm test
+
+```
 Test coverage
 
 ## API Endpoints
@@ -58,7 +60,9 @@ Test coverage
 - GET /worko/user/:id - Get a user by ID
 - GET /worko/user - Get all users
 - PUT /worko/user/:id - Update a user
-- DELETE /worko/user/:id - Delete a user (
+- DELETE /worko/user/:id - Delete a user
+
+  ## Note : All the tests work by interacting with the mongodb server. If mongodb is not connected then the tests will be failed. 
 
 License
 This project is licensed under the MIT License.
